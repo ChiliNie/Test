@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>9宫格数字拼图</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- 大盒子，包裹一切内容 -->
+	<div id="container">
+		<!-- 游戏区域的盒子 -->
+		<div id="game">
+			<div id="d1" onclick="move(1)">1</div>
+			<div id="d2" onclick="move(2)">2</div>
+			<div id="d3" onclick="move(3)">3</div>
+			<div id="d4" onclick="move(4)">4</div>
+			<div id="d5" onclick="move(5)">5</div>
+			<div id="d6" onclick="move(6)">6</div>
+			<div id="d7" onclick="move(7)">7</div>
+			<div id="d8" onclick="move(8)">8</div>
+		</div>
+		<!-- 控制区域 (暂停、重来) -->
+		<div id="control">
+			<!-- 时间显示区域 -->
+			<p>
+				<span id="allTime">总耗时</span>
+				<span id="timer"></span>
+			</p>
+			<!-- 控制区域 -->
+			<div>
+				<span id="start" onclick="start()">开始</span>
+				<span id="restart" onclick="restart()">重来</span>
+			</div>
+		</div>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+</html>

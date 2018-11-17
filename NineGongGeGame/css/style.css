@@ -1,0 +1,123 @@
+/*通设*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+	height: 100%；
+}
+/*设置大盒子*/
+#container {
+	position: relative;
+	width: 450px;
+	height: 450px;
+	margin: 100px auto;
+	border-radius: 2px;
+}
+/*游戏区域盒子*/
+#game {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 450px;
+	height: 450px;
+	background-color: pink;
+	box-shadow: 0 0 12px pink;
+	border-radius: 5px;
+}
+/*包裹游戏区域的小盒子*/
+#game div {
+	position: absolute;
+	width: 149px;
+	height: 149px;
+	box-shadow: 1px 1px 2px #b3b3b3;
+	background-color: skyblue;
+	color: #fff;
+	text-align: center;
+	line-height: 150px;
+	font-size: 150px;
+	border-radius: 5px;
+	cursor: pointer;
+	/*设置游戏小盒子点击时候的过渡时间并且处理兼容性问题*/
+	-webkit-transition: 0.3s; /*谷歌浏览器兼容性*/
+	-ms-transition: 0.3s; /*ie浏览器兼容性*/
+	-o-transition: 0.3s; /*欧朋浏览器兼容性*/
+	-moz-transition: 0.3s; /*firefox浏览器*/
+}
+/*设置鼠标悬停时字体颜色*/
+#game div:hover {
+	color: pink;
+}
+/*游戏控制区域，暂时和重来*/
+#control {
+	position: absolute;
+	top: 50px;
+	right: -210px;
+	width: 200px;
+	height: 100px;
+	border-radius: 5px;
+}
+/*时间显示区域*/
+#control p {
+	height: 26px;
+	line-height: 26px;
+}
+#control span {
+	font-size: 20px;
+	color: #222;
+}
+/*控制区域 开始、暂停、重来*/
+#restart,
+#start {
+	display: block;
+	width: 100px;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	background-color: skyblue;
+	border-radius: 5px;
+	text-shadow: 1px 1px 2px #fff;
+	box-shadow: 2px 2px 5px skyblue;
+	cursor: pointer;
+}
+#start {
+	margin-top: 5px;
+}
+#restart {
+	margin-top: 10px;
+}
+/*给游戏区域里面的小盒子摆好位置*/
+#d1 {
+	top: 0;
+	left: 0;
+}
+#d2 {
+	top: 0;
+	left: 150px;
+}
+#d3 {
+	top: 0;
+	left: 300px;
+}
+#d4 {
+	top: 150px;
+	lfet: 0;
+}
+#d5 {
+	top: 150px;
+	left: 150px;
+}
+#d6 {
+	top: 150px;
+	left: 300px;
+}
+#d7 {
+	top: 300px;
+	left: 0;
+}
+#d8 {
+	top: 300px;
+	left: 150px;
+}
